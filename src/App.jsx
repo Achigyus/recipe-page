@@ -1,34 +1,96 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import omletteDuFromage from './assets/image-omelette.jpeg'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="container">
+      <div className="recipe_page_card">
+
+        <div className="recipe_page_img_container">
+          <img src={omletteDuFromage} alt="Picture of a Simple Omlette" className="recipe_page_img" />
+        </div>
+
+        <div className="recipe_page_title_desc">
+          <h1 className="recipe_page_title">Simple Omelette Recipe</h1>
+          <p className="recipe_page_desc">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+            to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        </div>
+
+        <div className="recipe_page_prep_time">
+          <h3 className="recipe_page_prep_time_title">Preparation time</h3>
+          <ul className="recipe_page_prep_time_list">
+            <li className="recipe_page_prep_time_list_item">Total: Approximately 10 minutes</li>
+            <li className="recipe_page_prep_time_list_item">Preparation: 5 minutes</li>
+            <li className="recipe_page_prep_time_list_item">Cooking: 5 minutes</li>
+          </ul>
+        </div>
+
+        <div className="recipe_page_ingredients">
+          <h2 className="recipe_page_ingredients_title">Ingredients</h2>
+          <ul className="recipe_page_ingredients_list">
+            <li className="recipe_page_ingredients_list_item">2-3 large eggs</li>
+            <li className="recipe_page_ingredients_list_item">Salt, to taste</li>
+            <li className="recipe_page_ingredients_list_item">Pepper, to taste</li>
+            <li className="recipe_page_ingredients_list_item">1 tablespoon of butter or oil</li>
+            <li className="recipe_page_ingredients_list_item">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+          </ul>
+        </div>
+
+        <hr />
+
+        <div className="recipe_page_instructions">
+          <h2 className="recipe_page_instructions_title">Instructions</h2>
+          <ol className="recipe_page_instructions_list">
+            <li className="recipe_page_instructions_list_item">Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
+              You can add a tablespoon of water or milk for a fluffier texture.</li>
+            <li className="recipe_page_instructions_list_item">Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+            <li className="recipe_page_instructions_list_item">Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
+              the eggs evenly coat the surface.</li>
+            <li className="recipe_page_instructions_list_item">Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the
+              middle, sprinkle your chosen fillings over one half of the omelette.</li>
+            <li className="recipe_page_instructions_list_item">Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the
+              fillings. Let it cook for another minute, then slide it onto a plate.</li>
+            <li className="recipe_page_instructions_list_item">Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+          </ol>
+        </div>
+
+        <hr />
+
+        <div className="recipe_page_nutrition">
+          <h2 className="recipe_page_nutrition_title">Nutrition</h2>
+          <p className="recipe_page_nutrition_info">The table below shows nutritional values per serving without the additional fillings.</p>
+          <div className="recipe_page_nutrition_breakdown">
+            <div className="recipe_page_nutrition_breakdown_item">
+              <p className="recipe_page_nutrition_nutrient">Calories</p>
+              <p className="recipe_page_nutrition_nutrient_amount">277kcal</p>
+            </div>
+
+            <hr />
+
+            <div className="recipe_page_nutrition_breakdown_item">
+              <p className="recipe_page_nutrition_nutrient">Carbs</p>
+              <p className="recipe_page_nutrition_nutrient_amount">0g</p>
+            </div>
+
+            <hr />
+            
+            <div className="recipe_page_nutrition_breakdown_item">
+              <p className="recipe_page_nutrition_nutrient">Protein</p>
+              <p className="recipe_page_nutrition_nutrient_amount">20g</p>
+            </div>
+
+            <hr />
+            
+            <div className="recipe_page_nutrition_breakdown_item">
+              <p className="recipe_page_nutrition_nutrient">Fat</p>
+              <p className="recipe_page_nutrition_nutrient_amount">22g</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
