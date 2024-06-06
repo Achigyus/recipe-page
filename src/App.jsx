@@ -13,28 +13,28 @@ function App() {
 
         <div className="recipe_page_comp">
           <div className="recipe_page_title_desc">
-            <h1 className="recipe_page_title">Simple Omelette Recipe</h1>
-            <p className="recipe_page_desc">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+            <h1 className="recipe_page_title young-serif-regular">Simple Omelette Recipe</h1>
+            <p className="recipe_page_desc outfit-400">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
               to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
           </div>
 
           <div className="recipe_page_prep_time">
-            <h3 className="recipe_page_prep_time_title">Preparation time</h3>
+            <h3 className="recipe_page_prep_time_title outfit-600">Preparation time</h3>
             <ul className="recipe_page_prep_time_list">
-              <li className="recipe_page_prep_time_list_item">Total: Approximately 10 minutes</li>
-              <li className="recipe_page_prep_time_list_item">Preparation: 5 minutes</li>
-              <li className="recipe_page_prep_time_list_item">Cooking: 5 minutes</li>
+              <li className="recipe_page_prep_time_list_item outfit-400"><span>Total</span>: Approximately 10 minutes</li>
+              <li className="recipe_page_prep_time_list_item outfit-400"><span>Preparation</span>: 5 minutes</li>
+              <li className="recipe_page_prep_time_list_item outfit-400"><span>Cooking</span>: 5 minutes</li>
             </ul>
           </div>
 
           <div className="recipe_page_ingredients">
-            <h2 className="recipe_page_ingredients_title">Ingredients</h2>
+            <h2 className="recipe_page_ingredients_title young-serif-regular">Ingredients</h2>
             <ul className="recipe_page_ingredients_list">
-              <li className="recipe_page_ingredients_list_item">2-3 large eggs</li>
-              <li className="recipe_page_ingredients_list_item">Salt, to taste</li>
-              <li className="recipe_page_ingredients_list_item">Pepper, to taste</li>
-              <li className="recipe_page_ingredients_list_item">1 tablespoon of butter or oil</li>
-              <li className="recipe_page_ingredients_list_item">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+              <li className="recipe_page_ingredients_list_item outfit-400">2-3 large eggs</li>
+              <li className="recipe_page_ingredients_list_item outfit-400">Salt, to taste</li>
+              <li className="recipe_page_ingredients_list_item outfit-400">Pepper, to taste</li>
+              <li className="recipe_page_ingredients_list_item outfit-400">1 tablespoon of butter or oil</li>
+              <li className="recipe_page_ingredients_list_item outfit-400">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
             </ul>
           </div>
 
