@@ -41,7 +41,7 @@ function App() {
           <hr />
 
           <div className="recipe_page_instructions">
-            <h2 className="recipe_page_instructions_title">Instructions</h2>
+            <h2 className="recipe_page_instructions_title young-serif-regular">Instructions</h2>
             <ol className="recipe_page_instructions_list">
               <li className="recipe_page_instructions_list_item">Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
                 You can add a tablespoon of water or milk for a fluffier texture.</li>
