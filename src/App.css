@@ -83,7 +83,8 @@ body {
 }
 
 .recipe_page_prep_time_list,
-.recipe_page_ingredients_list, .recipe_page_instructions_list {
+.recipe_page_ingredients_list,
+.recipe_page_instructions_list {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -97,7 +98,8 @@ body {
   padding-left: 16px;
 }
 
-.recipe_page_prep_time_list_item span {
+.recipe_page_prep_time_list_item span,
+.recipe_page_instructions_list_item span {
   font-weight: 700;
 }
 
@@ -122,10 +124,14 @@ body {
 .recipe_page_ingredients_list_item {
   color: #5F564D;
   padding-left: 16px;
+  font-size: 16px;
+  line-height: 150%;
 }
 
-.recipe_page_ingredients_list_item::marker {
+.recipe_page_ingredients_list_item::marker,
+.recipe_page_instructions_list_item::marker {
   color: #854632;
+  font-weight: 700;
 }
 
 hr {
@@ -145,10 +151,64 @@ hr {
   color: #854632;
 }
 
-.recipe_page_instructions_list_item{
-
+.recipe_page_instructions_list_item {
+  color: #5F564D;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 150%;
 }
 
-.recipe_page_instructions_list_item::marker{
-  
+.recipe_page_nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.recipe_page_nutrition_title {
+  font-size: 28px;
+  line-height: 100%;
+  color: #854632;
+}
+
+.recipe_page_nutrition_info{
+  font-size: 16px;
+  line-height: 150%;
+  color: #5F564D;
+}
+
+.recipe_page_nutrition_breakdown{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recipe_page_nutrition_breakdown_item{
+  display: flex;
+  gap: 16px;
+  padding: 0 32px;
+  justify-content: space-between;
+}
+
+.recipe_page_nutrition_nutrient{
+  font-size: 16px;
+  line-height: 150%;
+  color: #5F564D;
+  text-align: left;
+  width: 37.13%;
+}
+
+.recipe_page_nutrition_nutrient_amount{
+  font-size: 16px;
+  line-height: 150%;
+  color: #854632;
+  width: 37.13%;
+}
+
+.attribution {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #854632;
 }
