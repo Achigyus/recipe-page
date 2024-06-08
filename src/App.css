@@ -40,7 +40,8 @@ body {
 
 .recipe_page_card {
   background: #fff;
-
+  max-width: 736px;
+  margin: auto;
 }
 
 .recipe_page_img {
@@ -118,8 +119,6 @@ body {
   line-height: 100%;
   color: #854632;
 }
-
-.recipe_page_ingredients_list {}
 
 .recipe_page_ingredients_list_item {
   color: #5F564D;
@@ -207,8 +206,28 @@ hr {
 .attribution {
   padding: 5px 10px;
   text-align: center;
+  background: #fff;
 }
 
 .attribution a {
   color: #854632;
+}
+
+@media screen and (min-width: 735px) {
+  .container{
+    padding: min(6.3%, 124px);
+  }
+
+  .recipe_page_card{
+    padding: min(5.4%, 40px);
+    border-radius: 24px;
+  }
+
+  .recipe_page_comp{
+    padding: 40px 0;
+  }
+
+  .recipe_page_img{
+    border-radius: 12px;
+  }
 }
